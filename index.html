@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz de Literatura</title>
+    <title>Quiz de Anatomía</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             min-height: 100vh;
             padding: 20px;
             display: flex;
@@ -42,7 +42,7 @@
         }
 
         .header h1 {
-            color: #667eea;
+            color: #f5576c;
             font-size: 2.5em;
             margin-bottom: 10px;
         }
@@ -63,7 +63,7 @@
 
         .progress-fill {
             height: 100%;
-            background: linear-gradient(90deg, #667eea, #764ba2);
+            background: linear-gradient(90deg, #f093fb, #f5576c);
             width: 0%;
             transition: width 0.3s ease;
         }
@@ -83,7 +83,7 @@
         }
 
         .question-number {
-            color: #764ba2;
+            color: #f5576c;
             font-weight: bold;
             font-size: 1.1em;
             margin-bottom: 15px;
@@ -113,14 +113,14 @@
         }
 
         .option:hover {
-            border-color: #667eea;
-            background: #f8f9ff;
+            border-color: #f5576c;
+            background: #fff5f7;
             transform: translateX(5px);
         }
 
         .option.selected {
-            border-color: #667eea;
-            background: #f0f3ff;
+            border-color: #f5576c;
+            background: #ffe8ec;
         }
 
         .option.correct {
@@ -142,8 +142,8 @@
             display: none;
             margin-top: 20px;
             padding: 20px;
-            background: #fff9e6;
-            border-left: 4px solid #ffc107;
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
             border-radius: 8px;
             animation: fadeIn 0.4s ease;
         }
@@ -153,7 +153,7 @@
         }
 
         .justification strong {
-            color: #ff9800;
+            color: #1976d2;
         }
 
         .nav-buttons {
@@ -174,13 +174,13 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #f093fb, #f5576c);
             color: white;
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 5px 15px rgba(245, 87, 108, 0.4);
         }
 
         .btn-secondary {
@@ -210,14 +210,14 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #f093fb, #f5576c);
             color: white;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             margin: 30px auto;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 10px 30px rgba(245, 87, 108, 0.3);
         }
 
         .score-circle .score {
@@ -231,7 +231,7 @@
         }
 
         .results h2 {
-            color: #667eea;
+            color: #f5576c;
             font-size: 2em;
             margin-bottom: 20px;
         }
@@ -264,8 +264,8 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>📚 Examen de Literatura para ti Luz</h1>
-            <p>Examen de Admisión - 20 Preguntas</p>
+            <h1>🫀 Examen de Anatomía</h1>
+            <p>Tú puedes luz! - 20 Preguntas</p>
         </div>
 
         <div class="progress-bar">
@@ -293,124 +293,124 @@
     <script>
         const questions = [
             {
-                question: "¿Cuáles son los géneros literarios principales?",
-                options: ["Épico, lírico, dramático y narrativo", "Poesía, novela y cuento", "Clásico, medieval y moderno", "Romance, comedia y tragedia"],
+                question: "¿Cuál es la primera porción del intestino delgado?",
+                options: ["Yeyuno", "Íleon", "Duodeno", "Ciego"],
+                correct: 2,
+                justification: "El duodeno es la primera porción del intestino delgado, donde se produce la mayor parte de la digestión química de los alimentos."
+            },
+            {
+                question: "¿Qué órgano produce la bilis?",
+                options: ["Vesícula biliar", "Páncreas", "Hígado", "Estómago"],
+                correct: 2,
+                justification: "El hígado es el órgano que produce la bilis, la cual es almacenada en la vesícula biliar y ayuda en la digestión de las grasas."
+            },
+            {
+                question: "¿Cuál es la función principal del estómago?",
+                options: ["Absorber nutrientes", "Almacenar alimentos y digestión química", "Producir insulina", "Filtrar sangre"],
+                correct: 1,
+                justification: "El estómago almacena temporalmente los alimentos y realiza digestión química mediante ácido clorhídrico y enzimas digestivas."
+            },
+            {
+                question: "¿En qué porción del sistema digestivo se absorben principalmente los nutrientes?",
+                options: ["Estómago", "Intestino grueso", "Intestino delgado", "Esófago"],
+                correct: 2,
+                justification: "El intestino delgado es el principal sitio de absorción de nutrientes gracias a sus vellosidades intestinales que aumentan la superficie de absorción."
+            },
+            {
+                question: "¿Qué glándula digestiva secreta insulina y glucagón?",
+                options: ["Hígado", "Páncreas", "Glándulas salivales", "Vesícula biliar"],
+                correct: 1,
+                justification: "El páncreas tiene función endocrina (produce insulina y glucagón) y exocrina (produce enzimas digestivas)."
+            },
+            {
+                question: "¿Cuál es la válvula que separa el intestino delgado del intestino grueso?",
+                options: ["Válvula pilórica", "Válvula ileocecal", "Válvula cardias", "Esfínter esofágico"],
+                correct: 1,
+                justification: "La válvula ileocecal controla el paso del contenido del íleon (última porción del intestino delgado) al ciego (inicio del intestino grueso)."
+            },
+            {
+                question: "¿Cuántas cavidades tiene el corazón humano?",
+                options: ["Dos", "Tres", "Cuatro", "Cinco"],
+                correct: 2,
+                justification: "El corazón tiene cuatro cavidades: dos aurículas (derecha e izquierda) y dos ventrículos (derecho e izquierdo)."
+            },
+            {
+                question: "¿Qué vaso sanguíneo lleva sangre oxigenada desde los pulmones al corazón?",
+                options: ["Arteria pulmonar", "Vena pulmonar", "Arteria aorta", "Vena cava"],
+                correct: 1,
+                justification: "Las venas pulmonares transportan sangre rica en oxígeno desde los pulmones hasta la aurícula izquierda del corazón."
+            },
+            {
+                question: "¿Cuál es la arteria más grande del cuerpo humano?",
+                options: ["Arteria pulmonar", "Arteria carótida", "Arteria aorta", "Arteria femoral"],
+                correct: 2,
+                justification: "La aorta es la arteria más grande del cuerpo, emerge del ventrículo izquierdo y distribuye sangre oxigenada a todo el organismo."
+            },
+            {
+                question: "¿Qué válvula cardíaca se encuentra entre la aurícula izquierda y el ventrículo izquierdo?",
+                options: ["Válvula tricúspide", "Válvula mitral", "Válvula aórtica", "Válvula pulmonar"],
+                correct: 1,
+                justification: "La válvula mitral (o bicúspide) se localiza entre la aurícula izquierda y el ventrículo izquierdo, regulando el flujo sanguíneo entre ambas cavidades."
+            },
+            {
+                question: "¿Cuál es la función principal de los glóbulos rojos?",
+                options: ["Defensa inmunológica", "Coagulación sanguínea", "Transporte de oxígeno", "Producción de anticuerpos"],
+                correct: 2,
+                justification: "Los glóbulos rojos (eritrocitos) contienen hemoglobina que transporta oxígeno desde los pulmones a todos los tejidos del cuerpo."
+            },
+            {
+                question: "¿Qué vena lleva sangre desoxigenada de la parte superior del cuerpo al corazón?",
+                options: ["Vena cava inferior", "Vena cava superior", "Vena pulmonar", "Vena porta"],
+                correct: 1,
+                justification: "La vena cava superior transporta sangre desoxigenada de la cabeza, cuello, brazos y parte superior del tórax hacia la aurícula derecha."
+            },
+            {
+                question: "¿Cuál es el órgano principal del aparato respiratorio?",
+                options: ["Tráquea", "Bronquios", "Pulmones", "Laringe"],
+                correct: 2,
+                justification: "Los pulmones son los órganos principales de la respiración donde ocurre el intercambio gaseoso de oxígeno y dióxido de carbono."
+            },
+            {
+                question: "¿Cómo se llama el músculo que separa la cavidad torácica de la cavidad abdominal?",
+                options: ["Diafragma", "Intercostal", "Pectoral", "Serrato"],
                 correct: 0,
-                justification: "Los géneros literarios fundamentales son: épico, lírico, dramático y narrativo, cada uno con características y propósitos distintos."
+                justification: "El diafragma es el principal músculo respiratorio que separa el tórax del abdomen y su contracción permite la inspiración."
             },
             {
-                question: "La figura literaria que establece una comparación directa usando 'como' o 'cual' es:",
-                options: ["Metáfora", "Símil", "Hipérbole", "Anáfora"],
+                question: "¿Qué estructura impide que los alimentos entren en la tráquea durante la deglución?",
+                options: ["Úvula", "Epiglotis", "Laringe", "Faringe"],
                 correct: 1,
-                justification: "El símil es una figura literaria que compara dos elementos utilizando nexos comparativos como 'como', 'cual', 'semejante a'."
+                justification: "La epiglotis es un cartílago que cierra la entrada de la laringe durante la deglución, evitando que el alimento entre en las vías respiratorias."
             },
             {
-                question: "¿Qué figura literaria es la exageración de una característica?",
-                options: ["Antítesis", "Elipsis", "Hipérbole", "Epíteto"],
+                question: "¿Cuál es la función de los alvéolos pulmonares?",
+                options: ["Producir moco", "Intercambio gaseoso", "Filtrar aire", "Calentar el aire"],
+                correct: 1,
+                justification: "Los alvéolos son pequeños sacos aéreos donde ocurre el intercambio gaseoso: el oxígeno pasa a la sangre y el CO₂ sale hacia el exterior."
+            },
+            {
+                question: "¿Cuántos lóbulos tiene el pulmón derecho?",
+                options: ["Dos", "Tres", "Cuatro", "Cinco"],
+                correct: 1,
+                justification: "El pulmón derecho tiene tres lóbulos (superior, medio e inferior), mientras que el pulmón izquierdo tiene solo dos lóbulos."
+            },
+            {
+                question: "¿Qué estructura conecta la faringe con los pulmones?",
+                options: ["Esófago", "Laringe", "Tráquea", "Bronquiolos"],
                 correct: 2,
-                justification: "La hipérbole consiste en exagerar las características de algo o alguien para darle mayor expresividad al mensaje."
+                justification: "La tráquea es el conducto que conecta la laringe con los bronquios principales, permitiendo el paso del aire hacia los pulmones."
             },
             {
-                question: "¿Quién escribió La Odisea en el Clasicismo Griego?",
-                options: ["Virgilio", "Sófocles", "Homero", "Esquilo"],
+                question: "¿Cómo se llama la membrana que recubre los pulmones?",
+                options: ["Pericardio", "Peritoneo", "Pleura", "Meninges"],
                 correct: 2,
-                justification: "Homero es el autor de La Odisea, uno de los poemas épicos más importantes de la literatura griega clásica."
+                justification: "La pleura es una membrana serosa de doble capa que recubre los pulmones y la cavidad torácica, facilitando el movimiento respiratorio."
             },
             {
-                question: "La Divina Comedia fue escrita por:",
-                options: ["Petrarca", "Boccaccio", "Dante Alighieri", "Virgilio"],
-                correct: 2,
-                justification: "Dante Alighieri escribió La Divina Comedia durante la Edad Media, considerada una obra maestra de la literatura universal."
-            },
-            {
-                question: "Romeo y Julieta fue escrita por:",
-                options: ["Christopher Marlowe", "William Shakespeare", "Ben Jonson", "John Milton"],
+                question: "¿Qué proceso permite la entrada de aire a los pulmones?",
+                options: ["Espiración", "Inspiración", "Ventilación", "Difusión"],
                 correct: 1,
-                justification: "William Shakespeare escribió Romeo y Julieta durante el Renacimiento, una de sus tragedias más célebres."
-            },
-            {
-                question: "¿Quién escribió Nuestra Señora de París?",
-                options: ["Alexandre Dumas", "Victor Hugo", "Émile Zola", "Gustave Flaubert"],
-                correct: 1,
-                justification: "Victor Hugo es el autor de Nuestra Señora de París, obra representativa del Romanticismo francés."
-            },
-            {
-                question: "Papá Goriot es una obra del Realismo escrita por:",
-                options: ["Stendhal", "Honorato de Balzac", "Guy de Maupassant", "Émile Zola"],
-                correct: 1,
-                justification: "Honorato de Balzac escribió Papá Goriot, una de las novelas fundamentales del Realismo francés."
-            },
-            {
-                question: "La Metamorfosis fue escrita por:",
-                options: ["Franz Kafka", "Thomas Mann", "Hermann Hesse", "Rainer Maria Rilke"],
-                correct: 0,
-                justification: "Franz Kafka escribió La Metamorfosis, obra clave de la literatura del siglo XX que explora temas existenciales."
-            },
-            {
-                question: "¿Quién escribió La Náusea y ganó el Premio Nobel de Literatura?",
-                options: ["Albert Camus", "Jean Paul Sartre", "Simone de Beauvoir", "André Gide"],
-                correct: 1,
-                justification: "Jean Paul Sartre escribió La Náusea, aunque rechazó el Premio Nobel. Es figura fundamental del existencialismo literario."
-            },
-            {
-                question: "El Cantar de Mio Cid pertenece a:",
-                options: ["Los cantares de gesta españoles", "La novela picaresca", "El teatro del Siglo de Oro", "La poesía renacentista"],
-                correct: 0,
-                justification: "El Cantar de Mio Cid es el cantar de gesta más importante de la literatura española medieval."
-            },
-            {
-                question: "El lazarillo de Tormes es:",
-                options: ["Una novela caballeresca", "Una obra de teatro", "Una novela picaresca", "Un poema épico"],
-                correct: 2,
-                justification: "El lazarillo de Tormes es la primera novela picaresca española, del período renacentista."
-            },
-            {
-                question: "El ingenioso hidalgo don Quijote de la Mancha fue escrito por:",
-                options: ["Lope de Vega", "Miguel de Cervantes Saavedra", "Francisco de Quevedo", "Tirso de Molina"],
-                correct: 1,
-                justification: "Miguel de Cervantes Saavedra escribió Don Quijote de la Mancha, considerada la obra cumbre de la literatura española."
-            },
-            {
-                question: "Las Rimas pertenecen al Romanticismo español y fueron escritas por:",
-                options: ["José de Espronceda", "Gustavo Adolfo Bécquer", "Rosalía de Castro", "Duque de Rivas"],
-                correct: 1,
-                justification: "Gustavo Adolfo Bécquer escribió las Rimas, conjunto de poemas líricos del Romanticismo español tardío."
-            },
-            {
-                question: "Campos de Castilla (Retrato) fue escrito por:",
-                options: ["Miguel de Unamuno", "Antonio Machado", "Pío Baroja", "Azorín"],
-                correct: 1,
-                justification: "Antonio Machado, de la Generación del 98, escribió Campos de Castilla, que incluye el célebre poema Retrato."
-            },
-            {
-                question: "El romancero gitano (La casada infiel) fue escrito por:",
-                options: ["Rafael Alberti", "Federico García Lorca", "Luis Cernuda", "Vicente Aleixandre"],
-                correct: 1,
-                justification: "Federico García Lorca, de la Generación del 27, escribió El romancero gitano que incluye el poema La casada infiel."
-            },
-            {
-                question: "La familia de Pascual Duarte es una obra de la narrativa de posguerra escrita por:",
-                options: ["Miguel Delibes", "Carmen Laforet", "Camilo José Cela", "Ana María Matute"],
-                correct: 2,
-                justification: "Camilo José Cela escribió La familia de Pascual Duarte, obra fundamental de la narrativa española de posguerra."
-            },
-            {
-                question: "María es una novela del Romanticismo hispanoamericano escrita por:",
-                options: ["José Mármol", "Jorge Isaacs", "Esteban Echeverría", "Ricardo Palma"],
-                correct: 1,
-                justification: "Jorge Isaacs escribió María, considerada una de las novelas románticas más importantes de Hispanoamérica."
-            },
-            {
-                question: "Prosas profanas pertenece al Modernismo y fue escrita por:",
-                options: ["José Martí", "Rubén Darío", "Amado Nervo", "Leopoldo Lugones"],
-                correct: 1,
-                justification: "Rubén Darío escribió Prosas profanas (Sonatina), obra cumbre del Modernismo hispanoamericano."
-            },
-            {
-                question: "Cien años de soledad es una obra del Boom Literario escrita por:",
-                options: ["Mario Vargas Llosa", "Julio Cortázar", "Gabriel García Márquez", "Carlos Fuentes"],
-                correct: 2,
-                justification: "Gabriel García Márquez escribió Cien años de soledad, obra maestra del realismo mágico y el Boom Literario latinoamericano."
+                justification: "La inspiración es el proceso activo mediante el cual el diafragma se contrae y desciende, aumentando el volumen torácico y permitiendo la entrada de aire."
             }
         ];
 
@@ -441,7 +441,7 @@
                         `).join('')}
                     </div>
                     <div class="justification" id="justification">
-                        <strong>📚 Justificación:</strong> ${q.justification}
+                        <strong>🔬 Justificación:</strong> ${q.justification}
                     </div>
                 </div>
             `;
@@ -555,13 +555,13 @@
             let message = '';
 
             if (percentage >= 90) {
-                message = '¡Excelente! 🌟 Tienes un dominio sobresaliente de literatura Luz.';
+                message = '¡Excelente! 🌟 Muy bien Luz, tienes un dominio sobresaliente de anatomía.';
             } else if (percentage >= 70) {
-                message = '¡Muy bien! 👏 Tienes buenos conocimientos de literatura Luz.';
+                message = '¡Muy bien! 👏 Muy bien Luz, tienes buenos conocimientos de anatomía.';
             } else if (percentage >= 50) {
-                message = '¡Buen intento! 📖 Sigue estudiando para mejorar Luz.';
+                message = '¡Buen intento! 📖 bien Luz, Sigue estudiando para mejorar.';
             } else {
-                message = '¡Ánimo! 💪 Repasa los temas y vuelve a intentarlo Luz.';
+                message = '¡Ánimo! 💪 bien Luz, Repasa los temas y vuelve a intentarlo.';
             }
 
             document.getElementById('resultMessage').textContent = message;
