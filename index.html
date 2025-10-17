@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz de Anatomía</title>
+    <title>Quiz de Biología</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
             min-height: 100vh;
             padding: 20px;
             display: flex;
@@ -42,7 +42,7 @@
         }
 
         .header h1 {
-            color: #f5576c;
+            color: #11998e;
             font-size: 2.5em;
             margin-bottom: 10px;
         }
@@ -63,7 +63,7 @@
 
         .progress-fill {
             height: 100%;
-            background: linear-gradient(90deg, #f093fb, #f5576c);
+            background: linear-gradient(90deg, #11998e, #38ef7d);
             width: 0%;
             transition: width 0.3s ease;
         }
@@ -83,7 +83,7 @@
         }
 
         .question-number {
-            color: #f5576c;
+            color: #11998e;
             font-weight: bold;
             font-size: 1.1em;
             margin-bottom: 15px;
@@ -113,14 +113,14 @@
         }
 
         .option:hover {
-            border-color: #f5576c;
-            background: #fff5f7;
+            border-color: #11998e;
+            background: #f0fdf7;
             transform: translateX(5px);
         }
 
         .option.selected {
-            border-color: #f5576c;
-            background: #ffe8ec;
+            border-color: #11998e;
+            background: #e6fff5;
         }
 
         .option.correct {
@@ -142,8 +142,8 @@
             display: none;
             margin-top: 20px;
             padding: 20px;
-            background: #e3f2fd;
-            border-left: 4px solid #2196f3;
+            background: #e8f4f8;
+            border-left: 4px solid #11998e;
             border-radius: 8px;
             animation: fadeIn 0.4s ease;
         }
@@ -153,7 +153,7 @@
         }
 
         .justification strong {
-            color: #1976d2;
+            color: #0d7a6f;
         }
 
         .nav-buttons {
@@ -174,13 +174,13 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #f093fb, #f5576c);
+            background: linear-gradient(135deg, #11998e, #38ef7d);
             color: white;
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(245, 87, 108, 0.4);
+            box-shadow: 0 5px 15px rgba(17, 153, 142, 0.4);
         }
 
         .btn-secondary {
@@ -210,14 +210,14 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #f093fb, #f5576c);
+            background: linear-gradient(135deg, #11998e, #38ef7d);
             color: white;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             margin: 30px auto;
-            box-shadow: 0 10px 30px rgba(245, 87, 108, 0.3);
+            box-shadow: 0 10px 30px rgba(17, 153, 142, 0.3);
         }
 
         .score-circle .score {
@@ -231,7 +231,7 @@
         }
 
         .results h2 {
-            color: #f5576c;
+            color: #11998e;
             font-size: 2em;
             margin-bottom: 20px;
         }
@@ -264,7 +264,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🫀 Examen de Anatomía</h1>
+            <h1>🧬 Examen de Biología</h1>
             <p>Tú puedes luz! - 20 Preguntas</p>
         </div>
 
@@ -293,124 +293,124 @@
     <script>
         const questions = [
             {
-                question: "¿Cuál es la primera porción del intestino delgado?",
-                options: ["Yeyuno", "Íleon", "Duodeno", "Ciego"],
-                correct: 2,
-                justification: "El duodeno es la primera porción del intestino delgado, donde se produce la mayor parte de la digestión química de los alimentos."
-            },
-            {
-                question: "¿Qué órgano produce la bilis?",
-                options: ["Vesícula biliar", "Páncreas", "Hígado", "Estómago"],
-                correct: 2,
-                justification: "El hígado es el órgano que produce la bilis, la cual es almacenada en la vesícula biliar y ayuda en la digestión de las grasas."
-            },
-            {
-                question: "¿Cuál es la función principal del estómago?",
-                options: ["Absorber nutrientes", "Almacenar alimentos y digestión química", "Producir insulina", "Filtrar sangre"],
-                correct: 1,
-                justification: "El estómago almacena temporalmente los alimentos y realiza digestión química mediante ácido clorhídrico y enzimas digestivas."
-            },
-            {
-                question: "¿En qué porción del sistema digestivo se absorben principalmente los nutrientes?",
-                options: ["Estómago", "Intestino grueso", "Intestino delgado", "Esófago"],
-                correct: 2,
-                justification: "El intestino delgado es el principal sitio de absorción de nutrientes gracias a sus vellosidades intestinales que aumentan la superficie de absorción."
-            },
-            {
-                question: "¿Qué glándula digestiva secreta insulina y glucagón?",
-                options: ["Hígado", "Páncreas", "Glándulas salivales", "Vesícula biliar"],
-                correct: 1,
-                justification: "El páncreas tiene función endocrina (produce insulina y glucagón) y exocrina (produce enzimas digestivas)."
-            },
-            {
-                question: "¿Cuál es la válvula que separa el intestino delgado del intestino grueso?",
-                options: ["Válvula pilórica", "Válvula ileocecal", "Válvula cardias", "Esfínter esofágico"],
-                correct: 1,
-                justification: "La válvula ileocecal controla el paso del contenido del íleon (última porción del intestino delgado) al ciego (inicio del intestino grueso)."
-            },
-            {
-                question: "¿Cuántas cavidades tiene el corazón humano?",
-                options: ["Dos", "Tres", "Cuatro", "Cinco"],
-                correct: 2,
-                justification: "El corazón tiene cuatro cavidades: dos aurículas (derecha e izquierda) y dos ventrículos (derecho e izquierdo)."
-            },
-            {
-                question: "¿Qué vaso sanguíneo lleva sangre oxigenada desde los pulmones al corazón?",
-                options: ["Arteria pulmonar", "Vena pulmonar", "Arteria aorta", "Vena cava"],
-                correct: 1,
-                justification: "Las venas pulmonares transportan sangre rica en oxígeno desde los pulmones hasta la aurícula izquierda del corazón."
-            },
-            {
-                question: "¿Cuál es la arteria más grande del cuerpo humano?",
-                options: ["Arteria pulmonar", "Arteria carótida", "Arteria aorta", "Arteria femoral"],
-                correct: 2,
-                justification: "La aorta es la arteria más grande del cuerpo, emerge del ventrículo izquierdo y distribuye sangre oxigenada a todo el organismo."
-            },
-            {
-                question: "¿Qué válvula cardíaca se encuentra entre la aurícula izquierda y el ventrículo izquierdo?",
-                options: ["Válvula tricúspide", "Válvula mitral", "Válvula aórtica", "Válvula pulmonar"],
-                correct: 1,
-                justification: "La válvula mitral (o bicúspide) se localiza entre la aurícula izquierda y el ventrículo izquierdo, regulando el flujo sanguíneo entre ambas cavidades."
-            },
-            {
-                question: "¿Cuál es la función principal de los glóbulos rojos?",
-                options: ["Defensa inmunológica", "Coagulación sanguínea", "Transporte de oxígeno", "Producción de anticuerpos"],
-                correct: 2,
-                justification: "Los glóbulos rojos (eritrocitos) contienen hemoglobina que transporta oxígeno desde los pulmones a todos los tejidos del cuerpo."
-            },
-            {
-                question: "¿Qué vena lleva sangre desoxigenada de la parte superior del cuerpo al corazón?",
-                options: ["Vena cava inferior", "Vena cava superior", "Vena pulmonar", "Vena porta"],
-                correct: 1,
-                justification: "La vena cava superior transporta sangre desoxigenada de la cabeza, cuello, brazos y parte superior del tórax hacia la aurícula derecha."
-            },
-            {
-                question: "¿Cuál es el órgano principal del aparato respiratorio?",
-                options: ["Tráquea", "Bronquios", "Pulmones", "Laringe"],
-                correct: 2,
-                justification: "Los pulmones son los órganos principales de la respiración donde ocurre el intercambio gaseoso de oxígeno y dióxido de carbono."
-            },
-            {
-                question: "¿Cómo se llama el músculo que separa la cavidad torácica de la cavidad abdominal?",
-                options: ["Diafragma", "Intercostal", "Pectoral", "Serrato"],
+                question: "¿Cuáles son los principales bioelementos que componen a los seres vivos?",
+                options: ["Carbono, hidrógeno, oxígeno, nitrógeno", "Hierro, calcio, sodio, potasio", "Zinc, cobre, magnesio, cloro", "Azufre, fósforo, yodo, flúor"],
                 correct: 0,
-                justification: "El diafragma es el principal músculo respiratorio que separa el tórax del abdomen y su contracción permite la inspiración."
+                justification: "Los bioelementos primarios (C, H, O, N) representan aproximadamente el 96% de la materia viva y son fundamentales para formar las biomoléculas."
             },
             {
-                question: "¿Qué estructura impide que los alimentos entren en la tráquea durante la deglución?",
-                options: ["Úvula", "Epiglotis", "Laringe", "Faringe"],
+                question: "¿Qué son las biomoléculas?",
+                options: ["Solo proteínas y lípidos", "Moléculas orgánicas e inorgánicas que constituyen a los seres vivos", "Únicamente moléculas inorgánicas", "Solo ácidos nucleicos"],
                 correct: 1,
-                justification: "La epiglotis es un cartílago que cierra la entrada de la laringe durante la deglución, evitando que el alimento entre en las vías respiratorias."
+                justification: "Las biomoléculas son compuestos químicos orgánicos (carbohidratos, lípidos, proteínas, ácidos nucleicos) e inorgánicos (agua, sales minerales) que forman a los organismos vivos."
             },
             {
-                question: "¿Cuál es la función de los alvéolos pulmonares?",
-                options: ["Producir moco", "Intercambio gaseoso", "Filtrar aire", "Calentar el aire"],
+                question: "¿Cuál es la diferencia principal entre células procariotas y eucariotas?",
+                options: ["El tamaño celular", "La presencia o ausencia de núcleo definido", "El número de cromosomas", "La forma de la célula"],
                 correct: 1,
-                justification: "Los alvéolos son pequeños sacos aéreos donde ocurre el intercambio gaseoso: el oxígeno pasa a la sangre y el CO₂ sale hacia el exterior."
+                justification: "Las células eucariotas poseen un núcleo definido rodeado por membrana nuclear, mientras que las procariotas carecen de núcleo verdadero y su ADN está disperso en el citoplasma."
             },
             {
-                question: "¿Cuántos lóbulos tiene el pulmón derecho?",
-                options: ["Dos", "Tres", "Cuatro", "Cinco"],
-                correct: 1,
-                justification: "El pulmón derecho tiene tres lóbulos (superior, medio e inferior), mientras que el pulmón izquierdo tiene solo dos lóbulos."
-            },
-            {
-                question: "¿Qué estructura conecta la faringe con los pulmones?",
-                options: ["Esófago", "Laringe", "Tráquea", "Bronquiolos"],
+                question: "¿Qué estructura celular es responsable de la producción de energía (ATP)?",
+                options: ["Núcleo", "Ribosomas", "Mitocondrias", "Aparato de Golgi"],
                 correct: 2,
-                justification: "La tráquea es el conducto que conecta la laringe con los bronquios principales, permitiendo el paso del aire hacia los pulmones."
+                justification: "Las mitocondrias son los orgánulos encargados de la respiración celular y producción de ATP mediante la fosforilación oxidativa."
             },
             {
-                question: "¿Cómo se llama la membrana que recubre los pulmones?",
-                options: ["Pericardio", "Peritoneo", "Pleura", "Meninges"],
-                correct: 2,
-                justification: "La pleura es una membrana serosa de doble capa que recubre los pulmones y la cavidad torácica, facilitando el movimiento respiratorio."
-            },
-            {
-                question: "¿Qué proceso permite la entrada de aire a los pulmones?",
-                options: ["Espiración", "Inspiración", "Ventilación", "Difusión"],
+                question: "¿Qué proceso permite a las plantas producir su propio alimento?",
+                options: ["Respiración celular", "Fotosíntesis", "Fermentación", "Glucólisis"],
                 correct: 1,
-                justification: "La inspiración es el proceso activo mediante el cual el diafragma se contrae y desciende, aumentando el volumen torácico y permitiendo la entrada de aire."
+                justification: "La fotosíntesis es el proceso mediante el cual las plantas captan energía lumínica para sintetizar glucosa a partir de CO₂ y H₂O, liberando oxígeno."
+            },
+            {
+                question: "¿Cuál es la función principal de los carbohidratos en los seres vivos?",
+                options: ["Almacenamiento de información genética", "Catálisis de reacciones", "Fuente de energía y reserva energética", "Transporte de oxígeno"],
+                correct: 2,
+                justification: "Los carbohidratos (como glucosa, glucógeno y almidón) son la principal fuente de energía inmediata y sirven como reserva energética en los organismos."
+            },
+            {
+                question: "¿Dónde se lleva a cabo la absorción de nutrientes en el sistema digestivo?",
+                options: ["Estómago", "Intestino delgado", "Intestino grueso", "Esófago"],
+                correct: 1,
+                justification: "El intestino delgado es el principal sitio de absorción de nutrientes debido a sus vellosidades intestinales que aumentan la superficie de absorción."
+            },
+            {
+                question: "¿Qué son los pelos urticantes en las plantas?",
+                options: ["Órganos reproductores", "Estructuras de percepción de estímulos", "Mecanismos de almacenamiento", "Sistemas de transporte"],
+                correct: 1,
+                justification: "Los pelos urticantes son estructuras especializadas que permiten a las plantas percibir estímulos del ambiente y defenderse mediante sustancias irritantes."
+            },
+            {
+                question: "¿Cuál es la función de los receptores sensoriales en animales?",
+                options: ["Producir hormonas", "Percibir estímulos del medio ambiente", "Digerir alimentos", "Eliminar desechos"],
+                correct: 1,
+                justification: "Los receptores sensoriales captan estímulos externos (luz, sonido, temperatura, presión) e internos, y los transforman en señales nerviosas para su procesamiento."
+            },
+            {
+                question: "¿Qué son los movimientos involuntarios?",
+                options: ["Movimientos controlados conscientemente", "Respuestas automáticas del organismo sin control consciente", "Solo movimientos musculares", "Movimientos de las plantas"],
+                correct: 1,
+                justification: "Los movimientos involuntarios son respuestas automáticas controladas por el sistema nervioso autónomo, como los reflejos, el latido cardíaco y la respiración."
+            },
+            {
+                question: "¿Qué proceso celular permite obtener dos células hijas idénticas a la célula madre?",
+                options: ["Meiosis", "Mitosis", "Fecundación", "Gametogénesis"],
+                correct: 1,
+                justification: "La mitosis es un proceso de división celular que produce dos células hijas genéticamente idénticas a la célula madre, manteniendo el mismo número cromosómico."
+            },
+            {
+                question: "¿Cuántas células hijas se producen en la meiosis?",
+                options: ["Dos células diploides", "Cuatro células haploides", "Dos células haploides", "Cuatro células diploides"],
+                correct: 1,
+                justification: "La meiosis produce cuatro células hijas haploides (con la mitad del número cromosómico) a partir de una célula diploide, fundamental para la reproducción sexual."
+            },
+            {
+                question: "¿Qué tipo de reproducción NO requiere la unión de gametos?",
+                options: ["Reproducción sexual", "Fecundación", "Reproducción vegetativa", "Gametogénesis"],
+                correct: 2,
+                justification: "La reproducción vegetativa (o asexual) no requiere gametos ni fecundación; produce descendientes genéticamente idénticos al progenitor mediante procesos como esquejes o estolones."
+            },
+            {
+                question: "¿Qué es la excreción en los seres vivos?",
+                options: ["Absorción de nutrientes", "Eliminación de desechos metabólicos", "Producción de energía", "Síntesis de proteínas"],
+                correct: 1,
+                justification: "La excreción es el proceso mediante el cual los organismos eliminan desechos metabólicos tóxicos como urea, ácido úrico y CO₂ para mantener la homeostasis."
+            },
+            {
+                question: "¿Cuál es la función principal de los lípidos en las células?",
+                options: ["Transporte de oxígeno", "Almacenamiento de energía y componente de membranas", "Catálisis enzimática", "Información genética"],
+                correct: 1,
+                justification: "Los lípidos almacenan energía a largo plazo (como triglicéridos) y son componentes estructurales fundamentales de las membranas celulares (fosfolípidos)."
+            },
+            {
+                question: "¿Qué biomoléculas almacenan y transmiten la información genética?",
+                options: ["Carbohidratos", "Proteínas", "Ácidos nucleicos (ADN y ARN)", "Lípidos"],
+                correct: 2,
+                justification: "Los ácidos nucleicos (ADN y ARN) contienen y transmiten la información genética necesaria para el funcionamiento y reproducción celular."
+            },
+            {
+                question: "¿Cuál es la principal diferencia entre respiración aeróbica y anaeróbica?",
+                options: ["La cantidad de energía producida", "La presencia o ausencia de oxígeno", "El tipo de célula que la realiza", "La temperatura necesaria"],
+                correct: 1,
+                justification: "La respiración aeróbica requiere oxígeno y produce más ATP (36-38 moléculas), mientras que la anaeróbica no usa oxígeno y produce menos energía (2 ATP)."
+            },
+            {
+                question: "¿Qué estructura celular sintetiza proteínas?",
+                options: ["Mitocondrias", "Ribosomas", "Lisosomas", "Vacuolas"],
+                correct: 1,
+                justification: "Los ribosomas son los orgánulos responsables de la síntesis de proteínas mediante la traducción del ARN mensajero."
+            },
+            {
+                question: "¿Qué permite la teoría celular?",
+                options: ["Explicar el origen del universo", "Comprender que todos los seres vivos están formados por células", "Describir solo a las bacterias", "Estudiar únicamente a las plantas"],
+                correct: 1,
+                justification: "La teoría celular establece que: 1) Todos los seres vivos están formados por células, 2) La célula es la unidad básica de vida, 3) Toda célula proviene de otra célula preexistente."
+            },
+            {
+                question: "¿Qué tipo de célula tiene pared celular de celulosa?",
+                options: ["Células animales", "Células vegetales", "Solo células procariotas", "Células musculares"],
+                correct: 1,
+                justification: "Las células vegetales poseen pared celular compuesta principalmente de celulosa, que les proporciona soporte estructural y protección, a diferencia de las células animales."
             }
         ];
 
@@ -555,13 +555,13 @@
             let message = '';
 
             if (percentage >= 90) {
-                message = '¡Excelente! 🌟 Muy bien Luz, tienes un dominio sobresaliente de anatomía.';
+                message = '¡Excelente! 🌟 Felicidades Luz,Tienes un dominio sobresaliente de biología.';
             } else if (percentage >= 70) {
-                message = '¡Muy bien! 👏 Muy bien Luz, tienes buenos conocimientos de anatomía.';
+                message = '¡Muy bien! 👏 Muy bien Luz, Tienes buenos conocimientos de biología.';
             } else if (percentage >= 50) {
-                message = '¡Buen intento! 📖 bien Luz, Sigue estudiando para mejorar.';
+                message = '¡Buen intento! 📖 Bien luz, Sigue estudiando para mejorar.';
             } else {
-                message = '¡Ánimo! 💪 bien Luz, Repasa los temas y vuelve a intentarlo.';
+                message = '¡Ánimo! 💪Luz Repasa los temas y vuelve a intentarlo, Tú puedes!!.';
             }
 
             document.getElementById('resultMessage').textContent = message;
