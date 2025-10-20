@@ -264,8 +264,8 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🧬 Examen de Biología</h1>
-            <p>Tú puedes luz! - 20 Preguntas</p>
+            <h1>🧬 Quiz de Biología</h1>
+            <p>Examen de Admisión - 20 Preguntas</p>
         </div>
 
         <div class="progress-bar">
@@ -293,124 +293,124 @@
     <script>
         const questions = [
             {
-                question: "¿Cuáles son los principales bioelementos que componen a los seres vivos?",
-                options: ["Carbono, hidrógeno, oxígeno, nitrógeno", "Hierro, calcio, sodio, potasio", "Zinc, cobre, magnesio, cloro", "Azufre, fósforo, yodo, flúor"],
-                correct: 0,
-                justification: "Los bioelementos primarios (C, H, O, N) representan aproximadamente el 96% de la materia viva y son fundamentales para formar las biomoléculas."
-            },
-            {
-                question: "¿Qué son las biomoléculas?",
-                options: ["Solo proteínas y lípidos", "Moléculas orgánicas e inorgánicas que constituyen a los seres vivos", "Únicamente moléculas inorgánicas", "Solo ácidos nucleicos"],
-                correct: 1,
-                justification: "Las biomoléculas son compuestos químicos orgánicos (carbohidratos, lípidos, proteínas, ácidos nucleicos) e inorgánicos (agua, sales minerales) que forman a los organismos vivos."
-            },
-            {
-                question: "¿Cuál es la diferencia principal entre células procariotas y eucariotas?",
-                options: ["El tamaño celular", "La presencia o ausencia de núcleo definido", "El número de cromosomas", "La forma de la célula"],
-                correct: 1,
-                justification: "Las células eucariotas poseen un núcleo definido rodeado por membrana nuclear, mientras que las procariotas carecen de núcleo verdadero y su ADN está disperso en el citoplasma."
-            },
-            {
-                question: "¿Qué estructura celular es responsable de la producción de energía (ATP)?",
-                options: ["Núcleo", "Ribosomas", "Mitocondrias", "Aparato de Golgi"],
+                question: "¿Cuál de los siguientes elementos NO es un bioelemento primario?",
+                options: ["Carbono (C)", "Hidrógeno (H)", "Calcio (Ca)", "Oxígeno (O)"],
                 correct: 2,
-                justification: "Las mitocondrias son los orgánulos encargados de la respiración celular y producción de ATP mediante la fosforilación oxidativa."
+                justification: "Los bioelementos primarios son C, H, O, N, P y S que constituyen el 96% de la materia viva. El calcio es un bioelemento secundario importante pero en menor proporción."
             },
             {
-                question: "¿Qué proceso permite a las plantas producir su propio alimento?",
-                options: ["Respiración celular", "Fotosíntesis", "Fermentación", "Glucólisis"],
+                question: "Las proteínas están formadas por la unión de:",
+                options: ["Monosacáridos", "Aminoácidos", "Nucleótidos", "Ácidos grasos"],
                 correct: 1,
-                justification: "La fotosíntesis es el proceso mediante el cual las plantas captan energía lumínica para sintetizar glucosa a partir de CO₂ y H₂O, liberando oxígeno."
+                justification: "Las proteínas son polímeros formados por la unión de aminoácidos mediante enlaces peptídicos. Existen 20 aminoácidos diferentes que forman todas las proteínas."
+            },
+            {
+                question: "¿Qué característica distingue a las células eucariotas de las procariotas?",
+                options: ["Presencia de ribosomas", "Núcleo definido con membrana nuclear", "Capacidad de reproducirse", "Presencia de ADN"],
+                correct: 1,
+                justification: "Las células eucariotas poseen un núcleo verdadero delimitado por membrana nuclear que contiene el material genético, mientras que las procariotas tienen su ADN disperso en el citoplasma."
+            },
+            {
+                question: "¿Qué orgánulo celular es conocido como la 'central energética' de la célula?",
+                options: ["Cloroplasto", "Mitocondria", "Núcleo", "Lisosoma"],
+                correct: 1,
+                justification: "La mitocondria es el orgánulo donde ocurre la respiración celular aeróbica, proceso que produce ATP (adenosín trifosfato), la principal fuente de energía para las funciones celulares."
+            },
+            {
+                question: "En la fotosíntesis, las plantas capturan energía luminosa y producen:",
+                options: ["Proteínas y lípidos", "Glucosa y oxígeno", "Agua y dióxido de carbono", "ATP únicamente"],
+                correct: 1,
+                justification: "Durante la fotosíntesis, las plantas usan luz solar, CO₂ y agua para sintetizar glucosa (alimento) y liberar oxígeno como producto secundario, mediante la ecuación: 6CO₂ + 6H₂O + luz → C₆H₁₂O₆ + 6O₂."
             },
             {
                 question: "¿Cuál es la función principal de los carbohidratos en los seres vivos?",
-                options: ["Almacenamiento de información genética", "Catálisis de reacciones", "Fuente de energía y reserva energética", "Transporte de oxígeno"],
+                options: ["Catalizador de reacciones químicas", "Almacenamiento y obtención de energía", "Transmisión de información genética", "Defensa inmunológica"],
+                correct: 1,
+                justification: "Los carbohidratos (como glucosa, glucógeno y almidón) son la principal fuente de energía inmediata para los organismos y también sirven como reserva energética."
+            },
+            {
+                question: "¿En qué órgano del sistema digestivo se absorbe la mayor parte de los nutrientes?",
+                options: ["Estómago", "Intestino delgado", "Colon", "Hígado"],
+                correct: 1,
+                justification: "El intestino delgado, especialmente el yeyuno, es donde ocurre la mayor absorción de nutrientes gracias a las vellosidades y microvellosidades intestinales que aumentan la superficie de contacto."
+            },
+            {
+                question: "¿Qué tipo de respuesta realizan las plantas cuando crecen hacia la luz?",
+                options: ["Geotropismo", "Fototropismo", "Quimiotropismo", "Tigmotropismo"],
+                correct: 1,
+                justification: "El fototropismo es la respuesta direccional de crecimiento de las plantas hacia la fuente de luz, principalmente en tallos y hojas, mediada por hormonas como las auxinas."
+            },
+            {
+                question: "Los receptores que captan estímulos químicos, como los del gusto y olfato, se llaman:",
+                options: ["Mecanorreceptores", "Fotorreceptores", "Quimiorreceptores", "Termorreceptores"],
                 correct: 2,
-                justification: "Los carbohidratos (como glucosa, glucógeno y almidón) son la principal fuente de energía inmediata y sirven como reserva energética en los organismos."
+                justification: "Los quimiorreceptores detectan sustancias químicas en el ambiente. Se encuentran en las papilas gustativas de la lengua y en el epitelio olfativo de la nariz."
             },
             {
-                question: "¿Dónde se lleva a cabo la absorción de nutrientes en el sistema digestivo?",
-                options: ["Estómago", "Intestino delgado", "Intestino grueso", "Esófago"],
+                question: "¿Qué tipo de movimiento es el latido del corazón?",
+                options: ["Voluntario consciente", "Involuntario automático", "Reflejo condicionado", "Movimiento nástico"],
                 correct: 1,
-                justification: "El intestino delgado es el principal sitio de absorción de nutrientes debido a sus vellosidades intestinales que aumentan la superficie de absorción."
+                justification: "El latido cardíaco es un movimiento involuntario controlado por el sistema nervioso autónomo y el nodo sinusal (marcapasos natural), que funciona sin control consciente."
             },
             {
-                question: "¿Qué son los pelos urticantes en las plantas?",
-                options: ["Órganos reproductores", "Estructuras de percepción de estímulos", "Mecanismos de almacenamiento", "Sistemas de transporte"],
+                question: "La mitosis es un proceso de división celular que produce:",
+                options: ["Cuatro células haploides diferentes", "Dos células diploides idénticas", "Gametos sexuales", "Células con mutaciones"],
                 correct: 1,
-                justification: "Los pelos urticantes son estructuras especializadas que permiten a las plantas percibir estímulos del ambiente y defenderse mediante sustancias irritantes."
+                justification: "La mitosis produce dos células hijas genéticamente idénticas a la célula madre, conservando el mismo número de cromosomas (diploides en organismos diploides). Es fundamental para crecimiento y reparación."
             },
             {
-                question: "¿Cuál es la función de los receptores sensoriales en animales?",
-                options: ["Producir hormonas", "Percibir estímulos del medio ambiente", "Digerir alimentos", "Eliminar desechos"],
+                question: "¿Cuántas divisiones celulares ocurren durante la meiosis?",
+                options: ["Una división", "Dos divisiones consecutivas", "Tres divisiones", "Cuatro divisiones"],
                 correct: 1,
-                justification: "Los receptores sensoriales captan estímulos externos (luz, sonido, temperatura, presión) e internos, y los transforman en señales nerviosas para su procesamiento."
+                justification: "La meiosis consta de dos divisiones sucesivas (meiosis I y meiosis II) que reducen el número cromosómico a la mitad, produciendo cuatro células haploides (gametos) a partir de una célula diploide."
             },
             {
-                question: "¿Qué son los movimientos involuntarios?",
-                options: ["Movimientos controlados conscientemente", "Respuestas automáticas del organismo sin control consciente", "Solo movimientos musculares", "Movimientos de las plantas"],
-                correct: 1,
-                justification: "Los movimientos involuntarios son respuestas automáticas controladas por el sistema nervioso autónomo, como los reflejos, el latido cardíaco y la respiración."
-            },
-            {
-                question: "¿Qué proceso celular permite obtener dos células hijas idénticas a la célula madre?",
-                options: ["Meiosis", "Mitosis", "Fecundación", "Gametogénesis"],
-                correct: 1,
-                justification: "La mitosis es un proceso de división celular que produce dos células hijas genéticamente idénticas a la célula madre, manteniendo el mismo número cromosómico."
-            },
-            {
-                question: "¿Cuántas células hijas se producen en la meiosis?",
-                options: ["Dos células diploides", "Cuatro células haploides", "Dos células haploides", "Cuatro células diploides"],
-                correct: 1,
-                justification: "La meiosis produce cuatro células hijas haploides (con la mitad del número cromosómico) a partir de una célula diploide, fundamental para la reproducción sexual."
-            },
-            {
-                question: "¿Qué tipo de reproducción NO requiere la unión de gametos?",
-                options: ["Reproducción sexual", "Fecundación", "Reproducción vegetativa", "Gametogénesis"],
+                question: "¿Qué tipo de reproducción genera mayor variabilidad genética?",
+                options: ["Reproducción asexual", "Bipartición", "Reproducción sexual", "Gemación"],
                 correct: 2,
-                justification: "La reproducción vegetativa (o asexual) no requiere gametos ni fecundación; produce descendientes genéticamente idénticos al progenitor mediante procesos como esquejes o estolones."
+                justification: "La reproducción sexual genera mayor variabilidad genética debido a la recombinación cromosómica durante la meiosis y la fusión aleatoria de gametos de diferentes progenitores."
             },
             {
-                question: "¿Qué es la excreción en los seres vivos?",
-                options: ["Absorción de nutrientes", "Eliminación de desechos metabólicos", "Producción de energía", "Síntesis de proteínas"],
-                correct: 1,
-                justification: "La excreción es el proceso mediante el cual los organismos eliminan desechos metabólicos tóxicos como urea, ácido úrico y CO₂ para mantener la homeostasis."
-            },
-            {
-                question: "¿Cuál es la función principal de los lípidos en las células?",
-                options: ["Transporte de oxígeno", "Almacenamiento de energía y componente de membranas", "Catálisis enzimática", "Información genética"],
-                correct: 1,
-                justification: "Los lípidos almacenan energía a largo plazo (como triglicéridos) y son componentes estructurales fundamentales de las membranas celulares (fosfolípidos)."
-            },
-            {
-                question: "¿Qué biomoléculas almacenan y transmiten la información genética?",
-                options: ["Carbohidratos", "Proteínas", "Ácidos nucleicos (ADN y ARN)", "Lípidos"],
+                question: "¿Cuál es el principal desecho nitrogenado eliminado por los riñones humanos?",
+                options: ["Ácido úrico", "Amoníaco", "Urea", "Creatinina únicamente"],
                 correct: 2,
-                justification: "Los ácidos nucleicos (ADN y ARN) contienen y transmiten la información genética necesaria para el funcionamiento y reproducción celular."
+                justification: "La urea es el principal producto de excreción nitrogenado en humanos, formado en el hígado a partir del amoníaco tóxico generado por el metabolismo de proteínas, y eliminado por los riñones."
             },
             {
-                question: "¿Cuál es la principal diferencia entre respiración aeróbica y anaeróbica?",
-                options: ["La cantidad de energía producida", "La presencia o ausencia de oxígeno", "El tipo de célula que la realiza", "La temperatura necesaria"],
+                question: "Los lípidos tienen como función principal:",
+                options: ["Acelerar reacciones químicas", "Almacenar energía a largo plazo y formar membranas", "Transportar oxígeno", "Almacenar información genética"],
                 correct: 1,
-                justification: "La respiración aeróbica requiere oxígeno y produce más ATP (36-38 moléculas), mientras que la anaeróbica no usa oxígeno y produce menos energía (2 ATP)."
+                justification: "Los lípidos tienen múltiples funciones: almacenamiento energético a largo plazo (triglicéridos), componente estructural de membranas celulares (fosfolípidos) y función hormonal (esteroides)."
             },
             {
-                question: "¿Qué estructura celular sintetiza proteínas?",
-                options: ["Mitocondrias", "Ribosomas", "Lisosomas", "Vacuolas"],
+                question: "El material genético de las células eucariotas se encuentra en:",
+                options: ["El citoplasma disperso", "El núcleo celular", "Los ribosomas", "Las mitocondrias únicamente"],
                 correct: 1,
-                justification: "Los ribosomas son los orgánulos responsables de la síntesis de proteínas mediante la traducción del ARN mensajero."
+                justification: "En células eucariotas, el ADN se encuentra organizado en cromosomas dentro del núcleo celular, protegido por la membrana nuclear. También hay pequeñas cantidades de ADN en mitocondrias y cloroplastos."
             },
             {
-                question: "¿Qué permite la teoría celular?",
-                options: ["Explicar el origen del universo", "Comprender que todos los seres vivos están formados por células", "Describir solo a las bacterias", "Estudiar únicamente a las plantas"],
-                correct: 1,
-                justification: "La teoría celular establece que: 1) Todos los seres vivos están formados por células, 2) La célula es la unidad básica de vida, 3) Toda célula proviene de otra célula preexistente."
+                question: "Durante la respiración celular aeróbica se requiere:",
+                options: ["Oxígeno como aceptor final de electrones", "Ausencia total de oxígeno", "Solo luz solar", "Clorofila necesariamente"],
+                correct: 0,
+                justification: "La respiración aeróbica requiere oxígeno como aceptor final de electrones en la cadena respiratoria mitocondrial, permitiendo la producción eficiente de ATP (aproximadamente 36-38 moléculas por glucosa)."
             },
             {
-                question: "¿Qué tipo de célula tiene pared celular de celulosa?",
-                options: ["Células animales", "Células vegetales", "Solo células procariotas", "Células musculares"],
+                question: "¿Qué estructura celular sintetiza las proteínas?",
+                options: ["Aparato de Golgi", "Ribosomas", "Lisosomas", "Centrosoma"],
                 correct: 1,
-                justification: "Las células vegetales poseen pared celular compuesta principalmente de celulosa, que les proporciona soporte estructural y protección, a diferencia de las células animales."
+                justification: "Los ribosomas son los orgánulos responsables de la síntesis proteica mediante el proceso de traducción, donde leen el ARN mensajero y ensamblan los aminoácidos en cadenas polipeptídicas."
+            },
+            {
+                question: "¿Qué estructura protege y da soporte a las células vegetales?",
+                options: ["Membrana plasmática", "Citoesqueleto", "Pared celular de celulosa", "Cápsula bacteriana"],
+                correct: 2,
+                justification: "Las células vegetales poseen pared celular compuesta principalmente de celulosa, externa a la membrana plasmática, que proporciona rigidez, soporte estructural y protección contra estrés mecánico."
+            },
+            {
+                question: "La absorción de agua por las raíces ocurre principalmente mediante:",
+                options: ["Transporte activo con gasto de ATP", "Ósmosis a través de pelos absorbentes", "Difusión facilitada por proteínas", "Endocitosis celular"],
+                correct: 1,
+                justification: "El agua ingresa a las células de la raíz principalmente por ósmosis (movimiento de agua desde zonas de menor a mayor concentración de solutos) a través de los pelos absorbentes que aumentan la superficie de absorción."
             }
         ];
 
@@ -555,13 +555,13 @@
             let message = '';
 
             if (percentage >= 90) {
-                message = '¡Excelente! 🌟 Felicidades Luz,Tienes un dominio sobresaliente de biología.';
+                message = '¡Excelente! 🌟 Tienes un dominio sobresaliente de biología.';
             } else if (percentage >= 70) {
-                message = '¡Muy bien! 👏 Muy bien Luz, Tienes buenos conocimientos de biología.';
+                message = '¡Muy bien! 👏 Tienes buenos conocimientos de biología.';
             } else if (percentage >= 50) {
-                message = '¡Buen intento! 📖 Bien luz, Sigue estudiando para mejorar.';
+                message = '¡Buen intento! 📖 Sigue estudiando para mejorar.';
             } else {
-                message = '¡Ánimo! 💪Luz Repasa los temas y vuelve a intentarlo, Tú puedes!!.';
+                message = '¡Ánimo! 💪 Repasa los temas y vuelve a intentarlo.';
             }
 
             document.getElementById('resultMessage').textContent = message;
